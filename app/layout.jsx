@@ -13,7 +13,7 @@ const jetbrainMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "theshawaf.com",
+  title: "shawaf.me",
   description: "Personal Website ",
 };
 
