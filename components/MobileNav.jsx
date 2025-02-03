@@ -18,7 +18,7 @@ const links = [
   },
   {
     name: "blog",
-    path: "https://substack.com/@mohamedelshawaf1",
+    path: "https://medium.com/@mohamedelshawaf",
   },
   {
     name: "contact",
