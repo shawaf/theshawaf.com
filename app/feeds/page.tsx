@@ -27,7 +27,7 @@ export default async function FeedsPage() {
         <div className="flex flex-col xl:flex-col items-start gap-20 xl:pt-8 xl:ph-24">
           <div className="text-center xl:text-left order-2 xl:order-none">
             <h3 className="h3 mb-6">
-              What's New
+              What&apos;s New
             </h3>
           </div>
           {sortedFeeds.map((feed) => (
