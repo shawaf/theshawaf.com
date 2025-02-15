@@ -2,9 +2,9 @@ import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
 //Components
-import { Header } from "@/components/Header";
-import PageTransitions from "@/components/PageTransitions";
-import StairTransitions from "@/components/StairTransitions";
+import { Header } from "../components/Header";
+import PageTransitions from "../components/PageTransitions";
+import StairTransitions from "../components/StairTransitions";
 
 const jetbrainMono = JetBrains_Mono({
   subsets: ["latin"],

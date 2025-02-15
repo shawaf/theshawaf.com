@@ -18,7 +18,7 @@ const Home = () => {
               Hello I&apos;m <br />
               <span className="text-accent"> Mohamed Elshawaf</span>
             </h1>
-            <span className="text-xl">Software Developer </span>
+            <span className="text-xl">Software Engineer</span>
             <p className="max-w-[500px] mb-9 text-white/80">
               I have 10+ years experience crafting scalable medical, fintech,
               and e-commerce applications, With a proven ability to deliver

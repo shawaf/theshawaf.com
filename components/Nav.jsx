@@ -2,33 +2,10 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import * as myConstants from "./Constants"
 
-const links = [
-  {
-    name: "home",
-    path: "/",
-  },
-  {
-    name: "services",
-    path: "/services",
-  },
-  {
-    name: "blog",
-    path: "https://medium.com/@mohamedelshawaf",
-  },
-  // {
-  //   name: "resume",
-  //   path: "/resume",
-  // },
-  // {
-  //   name: "work",
-  //   path: "/work",
-  // },
-  {
-    name: "contact",
-    path: "/contact",
-  },
-];
+const links = myConstants.navList; 
+
 export const Nav = () => {
   const pathName = usePathname();
   return (

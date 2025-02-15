@@ -6,25 +6,9 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
+import * as myConstants from "./Constants"
 
-const links = [
-  {
-    name: "home",
-    path: "/",
-  },
-  {
-    name: "services",
-    path: "/services",
-  },
-  {
-    name: "blog",
-    path: "https://medium.com/@mohamedelshawaf",
-  },
-  {
-    name: "contact",
-    path: "/contact",
-  },
-];
+const links = myConstants.navList; 
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);

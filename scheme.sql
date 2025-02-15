@@ -1,0 +1,8 @@
+CREATE TABLE feeds (
+  id SERIAL PRIMARY KEY,
+  content TEXT NOT NULL,
+  image_url TEXT,
+  video_url TEXT,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
