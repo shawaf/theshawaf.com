@@ -1,18 +1,13 @@
+"use server";
+
 import { format } from "date-fns"
 import Image from "next/image"
-import Link from "next/link";
-
-import { Pool } from 'pg';
-
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-});
+import { neon } from "@neondatabase/serverless";
 
 async function getFeeds() {
-  const client = await pool.connect();
-  const result = await client.query('SELECT * FROM feeds');
-  client.release();
-  return result.rows;
+  const sql = neon(process.env.DATABASE_URL);
+  const result = await sql`SELECT * FROM feeds`;
+  return result;
 }
 
 export default async function FeedsPage() {
