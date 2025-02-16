@@ -28,21 +28,23 @@ export default async function FeedsPage() {
             </h3>
           </div>
           {sortedFeeds.map((feed) => (
-            <div key={feed.id} className="rounded-lg  bg-[#1f1f1f] p-6">
-              <div className="mb-4 text-sm text-[#00ff9d]">
+            <div key={feed.id} className="rounded-lg p-6">
+              <div className="mb-4 text-sm text-[#00ff9d]" p-6>
                 <span className="text-accent">
-                  {format(new Date(feed.created_at), "MMMM d, yyyy")}</span></div>
-              <p className="mb-4 text-lg">{feed.content}</p>
+                  {format(new Date(feed.created_at), "MMMM d, yyyy")}
+                </span>
+              </div>
+              <p className="mb-4 text-lg p-6">{feed.content}</p>
               {feed.image_url && (
                 <Image
                   src={feed.image_url || "/placeholder.svg"}
                   alt="Feed image"
                   height={200}
                   width={200}
-                  className="rounded-lg object-cover mb-4"
+                  className="rounded-lg object-cover p-6"
                 />
               )}
-              {feed.video_url && <video src={feed.video_url} controls className="w-full rounded-lg mb-4" />}
+              {feed.video_url && <video src={feed.video_url} controls className="w-full rounded-lg mb-4 p-6" />}
               <hr className="border-t border-gray-600 mt-10" /> {/* Line after */}
             </div>
           ))}
