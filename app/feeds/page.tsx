@@ -22,8 +22,8 @@ export default async function FeedsPage() {
     <div className="min-h-screen bg-[#1a1a1a] text-white">
       <div className="container mx-auto  h-full">
         <div className="flex flex-col xl:flex-col items-start gap-20 xl:pt-8 xl:ph-24">
-          <div className="text-center xl:text-left order-2 xl:order-none">
-            <h3 className="h3 mb-6">
+          <div className="text-start xl:text-start order-none xl:order-none">
+            <h3 className="h3 mb-6 underline">
               What&apos;s New
             </h3>
           </div>
