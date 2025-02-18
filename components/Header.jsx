@@ -12,7 +12,7 @@ export const Header = () => {
         {/* logo */}
         <Link href="/">
           <h1 className="text-4xl font-semibold">
-            TheShawaf<span className="text-accent">.</span>
+            Shawaf<span className="text-accent">.</span>me
           </h1>
         </Link>
 
