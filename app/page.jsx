@@ -27,9 +27,8 @@ const Home = () => {
             </p>
             {/* button and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Link
-                href="https://docs.google.com/document/d/1RClJu87b3jXzAnGtKS0aZFvP2OcDtGa0H9WO3X2hIaE/edit?usp=sharing"
-                target="_blank"
+              <a
+                href="/resume.pdf"
               >
                 <Button
                   variant="outline"
@@ -39,7 +38,7 @@ const Home = () => {
                   <span>Download CV</span>
                   <FiDownload className="text-xl" />
                 </Button>
-              </Link>
+              </a>
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles="flex gap-6"
